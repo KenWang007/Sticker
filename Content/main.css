@@ -1,0 +1,163 @@
+﻿body {
+    font-size: 0.9em;
+}
+
+.mainpage {
+    background-image: url('../Images/background.jpg');
+}
+
+.border-div {
+    text-align: center;
+}
+
+.sticker-add {
+    background-color: antiquewhite;
+    width: 150px;
+    margin: auto;
+    position: relative;
+    border-radius: 25px;
+    margin-top: 15%;
+}
+
+.sticker-add-button {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+
+.sticker-div {
+    display: inline-block;
+    background-color: darkseagreen;
+    margin-top: 20px;
+	margin-right:5px;
+}
+
+    .sticker-div label {
+        font-size: xx-small;
+        margin-left: 5px;
+    }
+
+    .sticker-div input {
+        max-width: 133px;
+    }
+
+.sticker-body {
+    background-color: azure;
+    width: 180px;
+    height: 150px;
+    max-width: 180px;
+    max-height: 150px;
+    overflow: hidden;
+    margin: 3px 5px 10px 5px;
+    text-shadow: 1px 1px 1px green;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+    .sticker-body:first-letter {
+        font-family: 'Agency FB';
+        color: #091dfc;
+        font-size: 3em;
+    }
+
+    .sticker-body:first-line {
+        font-style: italic;
+    }
+
+.sticker-container {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px;
+}
+
+
+.stickerwall-header {
+    display: flex;
+}
+
+.closeicon {
+    width: 20px;
+    height: 20px;
+    background: #7def59;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    float: right;
+    margin-right: -10px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+    .closeicon:hover {
+        cursor: pointer;
+    }
+
+.skin-panel {
+    background-color: antiquewhite;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 12%;
+    height: 25px;
+    font-size: initial;
+    font-family: fantasy;
+}
+
+.skin-panel-container {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+    .skin-panel-container div {
+        margin-right: 3px;
+        width: 20px;
+        height: 20px;
+    }
+
+
+        .skin-panel-container div:hover {
+            cursor: pointer;
+        }
+
+.sticker-types {
+    margin-top: 2.1%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 12%;
+    height: 23px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .sticker-types select {
+        width: 40px;
+    }
+
+    .sticker-types label {
+        font-size: smaller;
+        font-family: fantasy;
+    }
+
+.sticker-types-class-darkseagreen {
+    background-color: darkseagreen;
+}
+
+.sticker-types-class-blue {
+    background-color: #f3812b;
+}
+
+.sticker-types-class-yellow {
+    background-color: #ee87e6;
+}
+
+.sticker-types-class-purple {
+    background-color: purple;
+}
+
+.sticker-types-class-green {
+    background-color: green;
+}
