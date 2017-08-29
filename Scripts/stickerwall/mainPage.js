@@ -54,6 +54,10 @@ $("#sticker-types").on("change",function(e)
     $("#sticker-types").addClass(stickerType);
 });
 
+$("#export").on("click", function () {
+    $("#export").attr("href","data:application/json," + encodeURIComponent(JSON.stringify(window.localStorage, null, '\t')));
+});
+
 $(".filter-color-js").on("click",saveStickerSkin);
 $(".sticker-body").on("blur",autoSaveStickerAfterBlur);
 $(".sticker-header").on("blur",autoSaveStickerAfterBlur);
@@ -89,14 +93,6 @@ function resetStickerState() {
             }
         }
     }
-}
-
-function webSocket() {
-    var websocket = new WebSocket("ws://localhost:54513");
-    websocket.onopen = function() {
-        websocket.send("test");
-    }
-
 }
 
 function saveStickerSkin() {
