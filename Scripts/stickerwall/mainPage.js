@@ -55,7 +55,23 @@ $("#sticker-types").on("change",function(e)
 });
 
 $("#export").on("click", function () {
-    $("#export").attr("href","data:application/json," + encodeURIComponent(JSON.stringify(window.localStorage, null, '\t')));
+
+    var exportData = new Array();
+    var jsonData = JSON.parse(JSON.stringify(window.localStorage));
+
+    $.each(jsonData, function(idx, obj) {
+        var stickerName =JSON.parse(obj).header;
+        var stickerContent = JSON.parse(obj).content;
+        if (stickerName.length > 0 && stickerContent.length > 0) {
+            var newObj = {
+                "name": stickerName,
+                "content":stickerContent
+            };
+            exportData.push(newObj);
+        } 
+    });
+
+    $("#export").attr("href","data:application/json," + encodeURIComponent(JSON.stringify(exportData, null, '\t')));
 });
 
 $(".filter-color-js").on("click",saveStickerSkin);
